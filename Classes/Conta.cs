@@ -1,3 +1,5 @@
+using System;
+
 namespace BankingSystemDIO
 {
     public class Conta
@@ -40,7 +42,7 @@ namespace BankingSystemDIO
         {
             this.Saldo += valorDeposito;
             
-            Console.WriteLine("{0}, seu saldo atual da conta é de {1}", this.Nome, this.Saldo)
+            Console.WriteLine("{0}, seu saldo atual da conta é de {1}", this.Nome, this.Saldo);
         }
 
         public void Tranferir(double valorTransferencia, Conta contaDestino)
@@ -54,10 +56,10 @@ namespace BankingSystemDIO
         public override string ToString()
         {
             string retorno = "";
-            retorno += "Tipo" + this.TipoConta + " \ ";
-            retorno += "Nome" + this.Nome + " \ ";
-            retorno += "Saldo" + this.Saldo + " \ ";
-            retorno += "Credito" + this.Credito + " \ ";
+            retorno += "Tipo: " + this.TipoConta + " | ";
+            retorno += "Nome: " + this.Nome + " | ";
+            retorno += "Saldo: " + this.Saldo + " | ";
+            retorno += "Credito: " + this.Credito;
             return retorno;
         }
     }

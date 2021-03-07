@@ -2,3 +2,12 @@ C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcorea
 C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcoreapp3.1\BankingSystemDIO.AssemblyInfoInputs.cache
 C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcoreapp3.1\BankingSystemDIO.AssemblyInfo.cs
 C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcoreapp3.1\BankingSystemDIO.csproj.CoreCompileInputs.cache
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\bin\Debug\netcoreapp3.1\BankingSystemDIO.exe
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\bin\Debug\netcoreapp3.1\BankingSystemDIO.deps.json
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\bin\Debug\netcoreapp3.1\BankingSystemDIO.runtimeconfig.json
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\bin\Debug\netcoreapp3.1\BankingSystemDIO.runtimeconfig.dev.json
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\bin\Debug\netcoreapp3.1\BankingSystemDIO.dll
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\bin\Debug\netcoreapp3.1\BankingSystemDIO.pdb
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcoreapp3.1\BankingSystemDIO.dll
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcoreapp3.1\BankingSystemDIO.pdb
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcoreapp3.1\BankingSystemDIO.genruntimeconfig.cache
