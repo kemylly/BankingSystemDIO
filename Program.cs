@@ -19,19 +19,19 @@ namespace BankingSystemDIO
                 switch (opcaoUsuario)
                 {
                     case "1": 
-                        // ListarContas();
+                        ListarContas();
                         break;
                     case "2": 
                         InserirConta();
                         break;
                     case "3": 
-                        // Transferir();
+                        Transferir();
                         break;
                     case "4": 
-                        // Sacar();
+                        SacarConta();
                         break;
                     case "5": 
-                        // Depositar();
+                        Depositar();
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
@@ -40,6 +40,50 @@ namespace BankingSystemDIO
             }
             Console.WriteLine("Obrigado por utilizar nossos serviços");
             Console.ReadLine();
+        }
+
+        private static void Transferir()
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void Depositar()
+        {
+            Console.Write("Digite o numero da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o valor do deposito: ");
+            double valorDeposito = double.Parse(Console.ReadLine());
+
+            listaContas[indiceConta].Depositar(valorDeposito);
+        }
+
+        private static void SacarConta()
+        {
+            Console.Write("Digite o numero da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o valor do saque: ");
+            double valorSaque = double.Parse(Console.ReadLine());
+
+            listaContas[indiceConta].Sacar(valorSaque);
+        }
+
+        private static void ListarContas()
+        {
+            Console.WriteLine("Listar contas");
+
+            if(listaContas.Count == 0)
+            {
+                Console.WriteLine("Nenhuma conta cadastrada");
+            }
+
+            for (int i = 0; i < listaContas.Count; i++)
+            {
+                Conta conta = listaContas[i];
+                Console.Write("#{0} - ", i);
+                Console.WriteLine(conta);
+            }
         }
 
         private static void InserirConta()
@@ -57,6 +101,11 @@ namespace BankingSystemDIO
 
             Console.Write("Digite o credito: ");
             double entradaCredito = double.Parse(Console.ReadLine());
+
+            Conta novaConta = new Conta(tipoConta: (TipoConta)entradaTipoConta, 
+                saldo: entradaSaldo, credito: entradaCredito, nome: entradaNome);
+
+            listaContas.Add(novaConta);
         }
 
         private static string ObterOpcaoUsuario()
@@ -67,8 +116,8 @@ namespace BankingSystemDIO
             Console.WriteLine("Digite o numero da opção desejada:");
             Console.WriteLine("1 - Listar contas");
             Console.WriteLine("2 - Inserir nova conta");
-            Console.WriteLine("1 - Transferir");
-            Console.WriteLine("1 - Sacar");
+            Console.WriteLine("3 - Transferir");
+            Console.WriteLine("4 - Sacar");
             Console.WriteLine("5 - Depositar");
             Console.WriteLine("C - Limpar Tela");
             Console.WriteLine("X - Sair");
