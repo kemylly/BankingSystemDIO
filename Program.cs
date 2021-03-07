@@ -6,11 +6,12 @@ namespace BankingSystemDIO
     {
         static void Main(string[] args)
         {
-            Conta minhaConta = new Conta();
+            Conta minhaConta = new Conta(TipoConta.PessoaFisica, 10, 10, "Kemylly");
 
-            minhaConta.Nome = "Kemylly";
+            //minhaConta.Nome = "Kemylly";
+            
 
-            Console.WriteLine("Hello World!");
+            Console.WriteLine(minhaConta.ToString());
         }
     }
 }

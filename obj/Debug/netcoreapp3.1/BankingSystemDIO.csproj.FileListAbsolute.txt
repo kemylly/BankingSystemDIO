@@ -1,0 +1,4 @@
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcoreapp3.1\BankingSystemDIO.csprojAssemblyReference.cache
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcoreapp3.1\BankingSystemDIO.AssemblyInfoInputs.cache
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcoreapp3.1\BankingSystemDIO.AssemblyInfo.cs
+C:\Users\Kemily\Documents\AspnetcoreProjetos\BankingSystemDIO\obj\Debug\netcoreapp3.1\BankingSystemDIO.csproj.CoreCompileInputs.cache

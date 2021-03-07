@@ -19,6 +19,7 @@ namespace BankingSystemDIO
 
         private string Nome { get; set; }
 
+
         public bool Sacar(double valorSaque)
         {
             //validacao do saldo
@@ -31,6 +32,33 @@ namespace BankingSystemDIO
             this.Saldo -= valorSaque;
 
             Console.WriteLine("{0}, seu saldo atual da conta é de {1}", this.Nome, this.Saldo);
+
+            return true;
+        }
+
+        public void Depositar(double valorDeposito)
+        {
+            this.Saldo += valorDeposito;
+            
+            Console.WriteLine("{0}, seu saldo atual da conta é de {1}", this.Nome, this.Saldo)
+        }
+
+        public void Tranferir(double valorTransferencia, Conta contaDestino)
+        {
+            if (this.Sacar(valorTransferencia))
+            {
+                contaDestino.Depositar(valorTransferencia);
+            }
+        }
+
+        public override string ToString()
+        {
+            string retorno = "";
+            retorno += "Tipo" + this.TipoConta + " \ ";
+            retorno += "Nome" + this.Nome + " \ ";
+            retorno += "Saldo" + this.Saldo + " \ ";
+            retorno += "Credito" + this.Credito + " \ ";
+            return retorno;
         }
     }
 }
