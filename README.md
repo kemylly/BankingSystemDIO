@@ -1,2 +1,2 @@
-# SistemaBancarioDIO
+# BankinhSystemDIO
 Criando uma aplicação simples de sistema bancario em .NET. 
