@@ -33,6 +33,9 @@ namespace BankingSystemDIO
                     case "5": 
                         Depositar();
                         break;
+                    case "C": 
+                        Console.Clear();
+                        break;
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
@@ -44,7 +47,16 @@ namespace BankingSystemDIO
 
         private static void Transferir()
         {
-            throw new NotImplementedException();
+            Console.Write("Digite o numero da conta de origem: ");
+            int indiceContaDeOrigem = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o numero da conta de destino: ");
+            int indiceContaDeDestino = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o valor a ser transferido: ");
+            double valorTransferencia = double.Parse(Console.ReadLine());
+
+            listaContas[indiceContaDeOrigem].Tranferir(valorTransferencia, listaContas[indiceContaDeDestino]);
         }
 
         private static void Depositar()
